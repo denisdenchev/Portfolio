@@ -1,51 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins 200,300,400,500,600,700,800,900&display=swap"');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-nav {
-  background-color: #333;
+@media only screen and (min-width: 320px) {
+  body {
+    background: #000;
+    min-height: 200vh;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: 0.6s;
+    z-index: 10000;
+  }
+
+  header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    padding: 5px 0 0 15px;
+  }
+
+  header ul {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+
+  header ul li {
+    position: relative;
+    list-style: none;
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  header ul li a {
+    position: relative;
+    text-decoration: none;
+    margin: 0 15px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: 0.6s;
+  }
+
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(bck.jpg);
+    background-size: cover;
+  }
+
+  header.sticky {
+    padding: 5px 90px;
+    background: #fff;
+  }
+
+  header.sticky .logo {
+    padding: 0;
+    color: #000;
+  }
+
+  header.sticky ul {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header.sticky ul li a {
+    margin: 0 10px;
+    color: #000;
+  }
 }
 
-ul {
-  display: flex;
-  justify-content: space-evenly;
+@media only screen and (min-width: 375px) {
+  header .logo {
+    padding: 5px 0 0 25px;
+  }
+
+  header.sticky .logo {
+    color: #000;
+    margin: 0 14px;
+  }
+
+  header.sticky ul {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+
+  header.sticky ul li a {
+    margin: 0 20px;
+  }
 }
 
-li {
-  float: left;
-  list-style-type: none;
-  /* background-color: #333; */
-  width: 100%;
+@media only screen and (min-width: 425px) {
+  header .logo {
+    padding: 5px 0 0 35px;
+  }
+
+  header.sticky .logo {
+    color: #000;
+    margin: 0 35px;
+  }
+
+  header.sticky ul {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+
+  header.sticky ul li a {
+    margin: 0 30px;
+  }
 }
 
-li a {
-  display: block;
-  color: red;
-  text-align: center;
-  font-size: 30px;
-  padding: 10px 16px;
-  text-decoration: none;
+@media only screen and (min-width: 768px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 20px;
+    z-index: 10000;
+  }
+
+  header ul li a {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  header .logo {
+    padding: 0;
+  }
+
+  header.sticky {
+    padding: 5px 40px;
+    background: #fff;
+  }
+
+  header.sticky .logo {
+    color: #000;
+    margin: 0;
+  }
+
+  header.sticky ul {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+
+  header.sticky ul li a {
+    margin: 0 40px;
+  }
 }
 
-li a:hover {
-  background-color: #111;
-}
+@media only screen and (min-width: 1024px) {
+  header ul,
+  header.sticky ul {
+    width: 75%;
+  }
 
-div {
-  height: 90vh;
-}
+  header ul li a,
+  header.sticky ul li a {
+    font-size: 35px;
+    font-weight: 600;
+  }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: sticky;
-  background-color: red;
-  top: 0;
-  width: 100%;
+  header .logo,
+  header.sticky .logo {
+    font-weight: 1000;
+    font-size: 3em;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    padding: 5px 0 0 35px;
+  }
 }
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-/* .sticky + .content {
-  padding-top: 60px;
-} */
