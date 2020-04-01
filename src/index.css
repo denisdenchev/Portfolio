@@ -116,54 +116,43 @@ header.sticky ul a {
   background: url(./images/portfolio.jpg);
   background-size: cover;
   opacity: 0.7;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
 }
 
-#portfolio .box {
-  height: 70%;
-  width: 70%;
-  border: 2px solid red;
-  border-radius: 30px;
-  margin: 0 auto;
-  margin-top: 15px;
-  background-color: blanchedalmond;
+#portfolio .bigBox {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#portfolio .box .card {
-  height: 100%;
-  width: 100%;
-  border-radius: 30px;
-  background-color: #f54f02;
-  /*set background image here*/
-  opacity: 0;
+#portfolio .bigBox .card {
+  border: 2px #000 solid;
+  border-radius: 15px;
+  width: 45%;
+  height: 95%;
   text-align: center;
 }
 
-#portfolio .box .card h2,
-#portfolio .box .card p,
-#portfolio .box .card a {
-  font-size: 18px;
+#portfolio .bigBox .card h2,
+#portfolio .bigBox .card h3,
+#portfolio .bigBox .card p {
+  padding: 5px 10px;
+  color: #fff;
+}
+
+#portfolio .bigBox .card a {
   text-decoration: none;
-  color: black;
-  padding: 5px;
-}
-
-#portfolio .box .card p {
-  margin-bottom: 20px;
-}
-
-#portfolio .box .card a {
-  border-right: inset 2px black;
-  border-radius: 50%;
-  padding: 10px;
-  margin: 0 10px;
-}
-
-#portfolio .box .card:hover {
-  opacity: 100;
+  color: #fff;
 }
 
 #contact {
