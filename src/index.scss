@@ -144,7 +144,7 @@ header.sticky {
 @media only screen and (min-width: 425px) {
   header {
     .logo {
-      padding: 5px 0 0 35px;
+      padding: 5px 0 0 15px;
     }
     ul {
       justify-content: space-between;
@@ -231,7 +231,7 @@ header.sticky {
     padding-top: 10px;
     .logo {
       padding: 0;
-      font-size: 55px;
+      font-size: 40px;
       margin-left: 20px;
     }
 
@@ -241,7 +241,7 @@ header.sticky {
     }
 
     li a {
-      font-size: 35px;
+      font-size: 25px;
       font-weight: 600;
     }
   }
