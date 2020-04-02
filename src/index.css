@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Charm", cursive;
+  font-family: "Noto Sans", sans-serif;
 }
 
 header {
@@ -37,6 +37,7 @@ header .logo {
   padding: 5px 0 0 13px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+  font-family: "Charm", cursive;
 }
 
 header ul {
@@ -136,33 +137,58 @@ header.sticky ul a {
           align-items: center;
 }
 
-#portfolio .bigBox .card {
+#portfolio .bigBox .cardContainer {
   border: 2px #000 solid;
   border-radius: 15px;
   width: 45%;
   height: 80%;
   text-align: center;
-  opacity: 0.2;
 }
 
-#portfolio .bigBox .card:hover {
+#portfolio .bigBox .cardContainer .card {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  font-size: 11px;
+}
+
+#portfolio .bigBox .cardContainer .card:hover {
   opacity: 1;
 }
 
-#portfolio .bigBox .card h2,
-#portfolio .bigBox .card h3,
-#portfolio .bigBox .card p {
-  padding: 5px 10px;
+#portfolio .bigBox .cardContainer .card h3,
+#portfolio .bigBox .cardContainer .card p {
+  padding: 8px 10px;
   color: #fff;
 }
 
-#portfolio .bigBox .card a {
+#portfolio .bigBox .cardContainer .card a {
   text-decoration: none;
   color: #fff;
-  border-right: 2px solid black;
-  border-radius: 50%;
-  padding-right: 10px;
-  margin: 0 10px;
+  border-right: 2px solid #fff;
+  border-radius: 60%;
+  padding-right: 8px;
+  margin: 5px;
+}
+
+#portfolio .bigBox .cardContainer .card a:hover {
+  border: 2px solid #fff;
+  -webkit-transition: 1;
+  transition: 1;
+  padding: 5px;
+  color: green;
+}
+
+#portfolio .bigBox #alien-invaders {
+  background-image: url(./images/alien.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#portfolio .bigBox #alien-invaders:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(./images/alien.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./images/alien.jpg);
 }
 
 #contact {
@@ -176,6 +202,9 @@ header.sticky ul a {
 }
 
 @media only screen and (min-width: 375px) {
+  #portfolio .bigBox .cardContainer .card {
+    font-size: 12.2px;
+  }
   header .logo {
     padding: 5px 0 0 25px;
   }
@@ -215,6 +244,9 @@ header.sticky ul a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  #portfolio .bigBox .cardContainer .card {
+    font-size: 13px;
   }
   header.sticky .logo {
     color: #000;
@@ -277,6 +309,9 @@ header.sticky ul a {
     font-size: 20px;
     font-weight: 600;
   }
+  #portfolio .bigBox .cardContainer .card {
+    font-size: 17.5px;
+  }
   header.sticky {
     padding: 5px 40px;
     background: #fff;
@@ -321,6 +356,9 @@ header.sticky ul a {
   header li a {
     font-size: 25px;
     font-weight: 600;
+  }
+  #portfolio .bigBox .cardContainer .card {
+    font-size: 24.5px;
   }
   header.sticky {
     padding: 5px 40px;
