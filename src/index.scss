@@ -114,9 +114,9 @@ header.sticky {
         opacity: 0;
         font-size: 11px;
 
-        &:hover {
-          opacity: 1;
-        }
+        // &:hover {
+        //   opacity: 1;
+        // }
 
         h3,
         p {
@@ -146,12 +146,27 @@ header.sticky {
       background-image: url(./images/alien.jpg);
       background-position: center;
       background-size: cover;
+
       &:hover {
         background-image: linear-gradient(
             rgba(0, 0, 0, 0.8),
             rgba(0, 0, 0, 0.8)
           ),
           url(./images/alien.jpg);
+      }
+    }
+
+    #vojo {
+      background-image: url(./images/vojo.png);
+      background-position: center;
+      background-size: cover;
+
+      &:hover {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+          ),
+          url(./images/vojo.png);
       }
     }
   }
