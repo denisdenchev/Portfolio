@@ -105,6 +105,11 @@ header.sticky {
       width: 45%;
       height: 80%;
       text-align: center;
+      opacity: 0.2;
+
+      &:hover {
+        opacity: 1;
+      }
 
       h2,
       h3,
@@ -116,6 +121,10 @@ header.sticky {
       a {
         text-decoration: none;
         color: #fff;
+        border-right: 2px solid black;
+        border-radius: 50%;
+        padding-right: 10px;
+        margin: 0 10px;
       }
     }
   }

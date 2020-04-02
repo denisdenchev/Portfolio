@@ -142,6 +142,11 @@ header.sticky ul a {
   width: 45%;
   height: 80%;
   text-align: center;
+  opacity: 0.2;
+}
+
+#portfolio .bigBox .card:hover {
+  opacity: 1;
 }
 
 #portfolio .bigBox .card h2,
@@ -154,6 +159,10 @@ header.sticky ul a {
 #portfolio .bigBox .card a {
   text-decoration: none;
   color: #fff;
+  border-right: 2px solid black;
+  border-radius: 50%;
+  padding-right: 10px;
+  margin: 0 10px;
 }
 
 #contact {
