@@ -114,9 +114,9 @@ header.sticky {
         opacity: 0;
         font-size: 11px;
 
-        // &:hover {
-        //   opacity: 1;
-        // }
+        &:hover {
+          opacity: 1;
+        }
 
         h3,
         p {
@@ -156,6 +156,20 @@ header.sticky {
       }
     }
 
+    #morse-code {
+      background-image: url(./images/Telegraph.jpg);
+      background-position: center;
+      background-size: cover;
+
+      &:hover {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+          ),
+          url(./images/Telegraph.jpg);
+      }
+    }
+
     #vojo {
       background-image: url(./images/vojo.png);
       background-position: center;
@@ -167,6 +181,20 @@ header.sticky {
             rgba(0, 0, 0, 0.8)
           ),
           url(./images/vojo.png);
+      }
+    }
+
+    #data-generator {
+      background-image: url(./images/data.jpg);
+      background-position: center;
+      background-size: cover;
+
+      &:hover {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+          ),
+          url(./images/data.jpg);
       }
     }
   }
