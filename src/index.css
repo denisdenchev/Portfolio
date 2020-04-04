@@ -90,7 +90,7 @@ header.sticky .logo {
   font-size: 30px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  margin: 0 88px;
+  margin: 0 90px;
 }
 
 header.sticky ul {
@@ -246,7 +246,7 @@ header.sticky ul a {
   }
   header.sticky .logo {
     color: #000;
-    margin: 0 115px;
+    margin: 0 120px;
     font-size: 30px;
     -webkit-transition: 0.6s;
     transition: 0.6s;
@@ -271,7 +271,7 @@ header.sticky ul a {
 
 @media only screen and (min-width: 425px) {
   header .logo {
-    padding: 5px 0 0 15px;
+    padding: 5px 0 0 25px;
   }
   header ul {
     -webkit-box-pack: justify;
@@ -279,11 +279,11 @@ header.sticky ul a {
             justify-content: space-between;
   }
   #portfolio .bigBox .cardContainer .card {
-    font-size: 13px;
+    font-size: 15px;
   }
   header.sticky .logo {
     color: #000;
-    margin: 0 140px;
+    margin: 0 145px;
     font-size: 30px;
   }
   header.sticky ul {
