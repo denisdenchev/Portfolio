@@ -89,6 +89,14 @@ header ul a {
   padding: 15px 0;
 }
 
+#home #aboutMe button {
+  font-size: 10px;
+  color: #fff;
+  padding: 5px 8px;
+  border: #fff solid 2px;
+  background-color: #000;
+}
+
 header.sticky {
   padding: 5px 0;
   background: #fff;
@@ -253,6 +261,13 @@ header.sticky ul a {
   #home #aboutMe p {
     padding: 15px 0;
   }
+  #home #aboutMe button {
+    font-size: 10px;
+    color: #fff;
+    padding: 5px 8px;
+    border: #fff solid 2px;
+    background-color: #000;
+  }
   #portfolio .bigBox .cardContainer .card {
     font-size: 12.2px;
   }
@@ -289,7 +304,8 @@ header.sticky ul a {
 
 @media only screen and (min-width: 425px) {
   header .logo {
-    padding: 5px 0 0 25px;
+    padding: 5px 0 0 20px;
+    background-color: red;
   }
   header ul {
     -webkit-box-pack: justify;
@@ -303,12 +319,19 @@ header.sticky ul a {
   #home #aboutMe p {
     padding: 15px 0;
   }
+  #home #aboutMe button {
+    font-size: 10px;
+    color: #fff;
+    padding: 5px 8px;
+    border: #fff solid 2px;
+    background-color: #000;
+  }
   #portfolio .bigBox .cardContainer .card {
     font-size: 15px;
   }
   header.sticky .logo {
     color: #000;
-    margin: 0 145px;
+    margin: 0 150px;
     font-size: 30px;
   }
   header.sticky ul {
@@ -367,6 +390,16 @@ header.sticky ul a {
     font-size: 20px;
     font-weight: 600;
   }
+  #home #aboutMe {
+    padding: 470px 15px 0 15px;
+  }
+  #home #aboutMe button {
+    font-size: 13px;
+    color: #fff;
+    padding: 5px 8px;
+    border: #fff solid 2px;
+    background-color: #000;
+  }
   #portfolio .bigBox .cardContainer .card {
     font-size: 17.5px;
   }
@@ -414,6 +447,22 @@ header.sticky ul a {
   header li a {
     font-size: 25px;
     font-weight: 600;
+  }
+  #home #aboutMe {
+    padding: 650px 15px 0 15px;
+  }
+  #home #aboutMe h3 {
+    font-size: 25px;
+  }
+  #home #aboutMe p {
+    font-size: 22px;
+  }
+  #home #aboutMe button {
+    font-size: 18px;
+    color: #fff;
+    padding: 5px 8px;
+    border: #fff solid 2px;
+    background-color: #000;
   }
   #portfolio .bigBox .cardContainer .card {
     font-size: 24.5px;
