@@ -402,6 +402,13 @@ header.sticky ul a {
   #portfolio .bigBox .cardContainer .card {
     font-size: 17.5px;
   }
+  #portfolio .bigBox .cardContainer .card p {
+    margin-bottom: 15px;
+  }
+  #portfolio .bigBox .cardContainer .card .links a {
+    margin: 10px;
+    padding: 5px 15px 5px 0;
+  }
   header.sticky {
     padding: 5px 40px;
     background: #fff;
@@ -434,7 +441,7 @@ header.sticky ul a {
   }
   header .logo {
     padding: 0;
-    font-size: 40px;
+    font-size: 35px;
     margin-left: 20px;
   }
   header ul {
@@ -447,33 +454,14 @@ header.sticky ul a {
     font-size: 25px;
     font-weight: 600;
   }
-  #home #aboutMe {
-    padding: 500px 15px 0 15px;
-  }
-  #home #aboutMe h3 {
-    font-size: 25px;
-  }
-  #home #aboutMe p {
-    font-size: 22px;
-  }
-  #home #aboutMe button {
-    font-size: 18px;
-    color: #fff;
-    padding: 5px 8px;
-    border: #fff solid 2px;
-    background-color: #000;
-  }
-  #portfolio .bigBox .cardContainer .card {
-    font-size: 24.5px;
-  }
   header.sticky {
-    padding: 5px 40px;
+    padding: 5px 40px 0 40px;
     background: #fff;
   }
   header.sticky .logo {
     color: #000;
     margin: 0;
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 1200;
   }
   header.sticky ul {
@@ -491,6 +479,26 @@ header.sticky ul a {
   }
   header.sticky li a {
     margin: 0 40px;
+    font-size: 25px;
+  }
+  #home #aboutMe {
+    padding: 430px 15px 0 15px;
+  }
+  #home #aboutMe h3 {
+    font-size: 25px;
+  }
+  #home #aboutMe p {
+    font-size: 22px;
+  }
+  #home #aboutMe button {
+    font-size: 18px;
+    color: #fff;
+    padding: 5px 8px;
+    border: #fff solid 2px;
+    background-color: #000;
+  }
+  #portfolio .bigBox .cardContainer .card {
+    font-size: 20px;
   }
   #portfolio {
     -ms-grid-columns: 1fr 1fr 1fr;
