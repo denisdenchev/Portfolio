@@ -273,6 +273,7 @@ header.sticky ul a {
   }
   header .logo {
     padding: 5px 0 0 25px;
+    background-color: red;
   }
   header.sticky {
     padding: 5px 0;
