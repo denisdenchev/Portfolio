@@ -28,6 +28,7 @@
     z-index: 10000;
   }
   header .logo {
+    background-color: red;
     position: relative;
     font-weight: 700;
     color: #fff;
