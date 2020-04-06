@@ -28,7 +28,6 @@
     z-index: 10000;
   }
   header .logo {
-    background-color: red;
     position: relative;
     font-weight: 700;
     color: #fff;
@@ -273,6 +272,15 @@
   }
 }
 
+@media only screen and (min-width: 410px) {
+  header .logo {
+    padding: 5px 0 0 30px;
+  }
+  header.sticky .logo {
+    margin: 0 134px;
+  }
+}
+
 @media only screen and (min-width: 425px) {
   header .logo {
     padding: 5px 0 0 18px;
@@ -294,7 +302,7 @@
   }
   header.sticky .logo {
     color: #000;
-    margin: 0 150px;
+    margin-left: 142px;
     font-size: 30px;
   }
   header.sticky ul {
