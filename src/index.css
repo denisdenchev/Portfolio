@@ -92,7 +92,7 @@
   }
   header.sticky {
     padding: 5px 0;
-    background: #e4e4e4;
+    background: #eeeeee;
   }
   header.sticky .logo {
     padding: 0;
@@ -155,7 +155,6 @@
     text-align: center;
     opacity: 0;
     font-size: 12px;
-    overflow: hidden;
   }
   #portfolio .bigBox .cardContainer .card:hover {
     opacity: 1;
@@ -178,7 +177,6 @@
     -webkit-transition: 1;
     transition: 1;
     padding: 0 5px;
-    font-weight: 3000;
   }
   #portfolio .bigBox #alien-invaders {
     background-image: url(./images/alien.jpg);
@@ -380,7 +378,7 @@
   }
   header.sticky {
     padding: 5px 40px;
-    background: #fff;
+    background: #eeeeee;
   }
   header.sticky .logo {
     color: #000;
@@ -405,6 +403,9 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  #portfolio {
+    height: 115vh;
+  }
   header {
     padding-top: 5px;
   }
@@ -425,7 +426,7 @@
   }
   header.sticky {
     padding: 5px 40px 0 40px;
-    background: #fff;
+    background: #eeeeee;
   }
   header.sticky .logo {
     color: #000;
@@ -465,12 +466,6 @@
   }
   #portfolio .bigBox .cardContainer .card {
     font-size: 20px;
-  }
-  #portfolio {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
   }
 }
 /*# sourceMappingURL=index.css.map */
