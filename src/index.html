@@ -7,6 +7,7 @@
     <title>denchDev</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="shortcut icon" href="./images/favicon.ico.png" />
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Noto+Sans&display=swap");
@@ -24,12 +25,12 @@
     <section id="home">
       <div id="aboutMe">
         <h3>
-          Hello, my name is Denis Denchev and I am a junior software-developer
+          Hello, my name is Denis Denchev and I am a junior software developer
         </h3>
         <p>
-          Finishing my education in April and having the core skills of
-          web-development such as HTML5, CSS3, JavaScript and many more , I am
-          on the look out for job opportunities
+          I am finishing my education in April and have the core skills of
+          web-development such as HTML5, CSS3, JavaScript and React , I am
+          actively looking for job opportunities
         </p>
         <a href="./CV.pdf" target="_blank"> Check my CV out</a>
       </div>
@@ -42,8 +43,8 @@
             <p>
               After two weeks of JavaScript, we were asked to do a timed
               challenge so we can apply the content we have had learned. It was
-              really intensive and challenging task. We had to do the challenge
-              using OOP.
+              a really intensive and challenging task. We had to do the
+              challenge using OOP.
             </p>
             <div class="links">
               <a href="https://spaceship-game.denchdev.co.uk/" target="_blank"
@@ -109,7 +110,31 @@
         </div>
       </div>
     </section>
-    <section id="contact"></section>
+    <section id="contact">
+      <form id="contact-form">
+        <input type="hidden" name="contact_number" />
+        <label>Name</label>
+        <input type="text" name="user_name" />
+        <label>Email</label>
+        <input type="email" name="user_email" />
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send" />
+      </form>
+      <!-- <form method="POST">
+        <input type="button" value="Send Email" onclick="sendEmail()" />
+      </form> -->
+    </section>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_P2n8nSANnxuaWusp4Mgc4");
+      })();
+    </script>
     <script src="index.js" type="text/javascript"></script>
   </body>
 </html>
