@@ -223,7 +223,7 @@
     background-position: center;
     -webkit-transition: 0.6s;
     transition: 0.6s;
-    padding: 50px;
+    padding-top: 50px;
   }
   #contact #contact-form {
     display: -webkit-box;
@@ -234,6 +234,8 @@
         -ms-flex-direction: column;
             flex-direction: column;
     width: 40%;
+    height: 80%;
+    margin: 25px;
     border: 2px solid #eeeeee;
     border-radius: 15px;
     padding: 20px;
