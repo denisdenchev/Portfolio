@@ -226,6 +226,19 @@
     padding-top: 50px;
   }
   #contact #contact-form {
+    width: 90%;
+    margin: 25px;
+    margin: 0 auto;
+    border: 2px solid #eeeeee;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  #contact #contact-form h2 {
+    text-align: center;
+    color: #eeeeee;
+    font-size: 2.5rem;
+  }
+  #contact #contact-form section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -233,40 +246,30 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 40%;
-    height: 80%;
-    margin: 25px;
-    border: 2px solid #eeeeee;
-    border-radius: 15px;
-    padding: 20px;
   }
-  #contact #contact-form h2 {
-    font-size: 2.5rem;
-    text-align: center;
+  #contact #contact-form section label {
     color: #eeeeee;
+    font-size: 1.5rem;
   }
-  #contact #contact-form label {
-    color: #eeeeee;
-    margin: 20px 0 5px 0;
-    font-size: 2rem;
-  }
-  #contact #contact-form input {
-    font-size: 2rem;
-    border-radius: 15px;
-    border: 2px black solid;
+  #contact #contact-form section input {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 80%;
+    font-size: 1.6rem;
     background-color: #eeeeee;
   }
-  #contact #contact-form textarea {
-    font-size: 2rem;
-    border-radius: 15px;
-    border: 2px black solid;
+  #contact #contact-form section textarea {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 80%;
+    height: 100px;
+    font-size: 1.6rem;
     background-color: #eeeeee;
   }
-  #contact #contact-form #button {
-    margin: 20px 0;
-    width: 40%;
-    font-size: 2rem;
+  #contact #contact-form section #button {
     background-color: #eeeeee;
+    margin: 10px 0;
+    width: 30%;
   }
 }
 
