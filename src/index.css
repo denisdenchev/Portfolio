@@ -216,7 +216,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./images/data.jpg);
   }
   #contact {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background: url(./images/contact.jpg);
     background-size: cover;
@@ -225,10 +225,22 @@
     transition: 0.6s;
     padding-top: 50px;
   }
+  #contact #media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 10px 0;
+  }
   #contact #contact-form {
     width: 90%;
-    margin: 25px;
-    margin: 0 auto;
+    margin: 70px auto auto auto;
     border: 2px solid #eeeeee;
     border-radius: 15px;
     padding: 10px;
@@ -254,14 +266,14 @@
   #contact #contact-form section input {
     border: 2px solid black;
     border-radius: 10px;
-    width: 80%;
+    width: 100%;
     font-size: 1.6rem;
     background-color: #eeeeee;
   }
   #contact #contact-form section textarea {
-    border: 2px solid black;
+    border: 2px solid #000;
     border-radius: 10px;
-    width: 80%;
+    width: 90%;
     height: 100px;
     font-size: 1.6rem;
     background-color: #eeeeee;
@@ -270,6 +282,22 @@
     background-color: #eeeeee;
     margin: 10px 0;
     width: 30%;
+  }
+  #contact .fab {
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #eeeeee;
+    margin: 20px 0;
+  }
+  footer {
+    background-color: #000;
+    height: 40px;
+    padding: 8.5px 0;
+  }
+  footer h4 {
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #eeeeee;
   }
 }
 
@@ -416,6 +444,19 @@
     margin: 10px;
     padding: 5px 15px;
   }
+  #contact #contact-form {
+    width: 60%;
+  }
+  #contact #contact-form section input {
+    margin-bottom: 10px;
+  }
+  #contact #contact-form section textarea {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  #contact #contact-form section #button {
+    width: 40%;
+  }
   header.sticky {
     padding: 5px 40px;
     background: #eeeeee;
@@ -516,6 +557,22 @@
         -ms-flex-pack: center;
             justify-content: center;
     font-size: 28px;
+  }
+  #contact #contact-form {
+    margin: 70px auto auto 40px;
+    width: 40%;
+  }
+  #contact #contact-form section input {
+    margin-bottom: 10px;
+  }
+  #contact #contact-form section label {
+    margin-bottom: 3px;
+  }
+  #contact #contact-form section textarea {
+    width: 100%;
+  }
+  #contact #contact-form section #button {
+    width: 30%;
   }
 }
 /*# sourceMappingURL=index.css.map */
