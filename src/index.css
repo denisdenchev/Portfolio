@@ -254,7 +254,7 @@
   }
   #contact #contact-form {
     width: 90%;
-    margin: 70px auto auto auto;
+    margin: 30px auto auto auto;
     border: 2px solid #eeeeee;
     border-radius: 15px;
     padding: 10px;
@@ -301,7 +301,8 @@
     font-size: 40px;
     background-color: rgba(0, 0, 0, 0);
     color: #eeeeee;
-    margin: 20px 0;
+    margin: 5px 0;
+    text-decoration: none;
   }
   footer {
     background-color: #000;
@@ -407,6 +408,10 @@
   header.sticky li a {
     margin: 0 30px;
   }
+  #contact #media a {
+    margin: 30px 0;
+    font-size: 50px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -494,6 +499,9 @@
   }
   #contact #contact-form section #button {
     width: 40%;
+  }
+  #contact #media a {
+    margin: 10px 0;
   }
   header.sticky {
     padding: 5px 40px;
@@ -584,7 +592,7 @@
     font-size: 1.4rem;
   }
   #contact #contact-form {
-    margin: 70px auto auto 40px;
+    margin: 20px auto auto 40px;
     width: 40%;
   }
   #contact #contact-form section input {
@@ -598,6 +606,15 @@
   }
   #contact #contact-form section #button {
     width: 30%;
+  }
+  #contact #media {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 46%;
+  }
+  #contact #media a {
+    margin: 8px 0;
   }
 }
 /*# sourceMappingURL=index.css.map */
