@@ -13,16 +13,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
     -webkit-transition: 0.6s;
     transition: 0.6s;
     z-index: 10000;
@@ -34,7 +24,7 @@
     text-decoration: none;
     font-size: 30px;
     letter-spacing: 2px;
-    padding: 5px 0 0 15px;
+    padding: 5px 0 0 12px;
     -webkit-transition: 0.6s;
     transition: 0.6s;
     font-family: "Charm", cursive;
@@ -55,8 +45,7 @@
   header ul li {
     position: relative;
     list-style: none;
-    font-size: 20px;
-    padding: 10px 0;
+    font-size: 18px;
   }
   header ul a {
     position: relative;
@@ -76,7 +65,7 @@
   #home #aboutMe {
     text-align: center;
     color: #fff;
-    padding: 360px 15px 0 15px;
+    padding: 140px 15px 0 15px;
   }
   #home #aboutMe h3 {
     padding: 15px 0;
@@ -105,7 +94,7 @@
     font-size: 30px;
     -webkit-transition: 0.6s;
     transition: 0.6s;
-    margin: 0 0 0 110px;
+    margin: 0 0 0 100px;
   }
   header.sticky ul {
     position: relative;
@@ -159,7 +148,7 @@
     height: 100%;
     text-align: center;
     opacity: 0;
-    font-size: 1.2rem;
+    font-size: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -175,7 +164,6 @@
   }
   #portfolio .bigBox .cardContainer .card h3,
   #portfolio .bigBox .cardContainer .card p {
-    padding: 8px 10px;
     color: #fff;
   }
   #portfolio .bigBox .cardContainer .card a {
@@ -196,7 +184,7 @@
     background-image: url(./images/alien.jpg);
     background-position: center;
     background-size: cover;
-    margin-top: 120px;
+    margin-top: 100px;
   }
   #portfolio .bigBox #alien-invaders:hover {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(./images/alien.jpg);
@@ -230,7 +218,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./images/data.jpg);
   }
   #contact {
-    height: 90vh;
+    height: 95vh;
     width: 100%;
     background: url(./images/contact.jpg);
     background-size: cover;
@@ -253,15 +241,15 @@
   }
   #contact #contact-form {
     width: 90%;
-    margin: 30px auto auto auto;
+    margin: 35px auto auto auto;
     border: 2px solid #eeeeee;
     border-radius: 15px;
-    padding: 10px;
+    padding: 5px 10px 10px 10px;
   }
   #contact #contact-form h2 {
     text-align: center;
     color: #eeeeee;
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
   #contact #contact-form section {
     display: -webkit-box;
@@ -274,33 +262,33 @@
   }
   #contact #contact-form section label {
     color: #eeeeee;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   #contact #contact-form section input {
     border: 2px solid black;
     border-radius: 10px;
     width: 100%;
-    font-size: 1.6rem;
+    font-size: 1rem;
     background-color: #eeeeee;
   }
   #contact #contact-form section textarea {
     border: 2px solid #000;
     border-radius: 10px;
     width: 90%;
-    height: 100px;
-    font-size: 1.6rem;
+    height: 80px;
+    font-size: 1rem;
     background-color: #eeeeee;
   }
   #contact #contact-form section #button {
     background-color: #eeeeee;
-    margin: 10px 0;
+    margin-top: 10px;
     width: 30%;
   }
   #contact .fab {
     font-size: 25px;
     background-color: rgba(0, 0, 0, 0);
     color: #eeeeee;
-    margin: 5px 0;
+    margin-top: 10px;
     text-decoration: none;
   }
   footer {
