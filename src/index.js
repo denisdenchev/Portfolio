@@ -3,7 +3,16 @@ window.addEventListener("scroll", () => {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-window.onload = function () {
+// grecaptcha.ready(function () {
+//   grecaptcha.execute("6Le93egUAAAAALHnbbvJ1i_MdUkicw7tfOrXvTg1", {
+//     action: "submit",
+//   });
+//   // .then(function (token) {
+//   //   alert("Success");
+//   // });
+// });
+
+window.onload = () => {
   document
     .getElementById("contact-form")
     .addEventListener("submit", function (event) {
@@ -13,6 +22,15 @@ window.onload = function () {
       emailjs.sendForm("contact_service", "contact_form", this);
       alert("Sent Successfully");
     });
+  // grecaptcha.ready(() => {
+  //   grecaptcha
+  //     .execute("6Le93egUAAAAALHnbbvJ1i_MdUkicw7tfOrXvTg1", {
+  //       action: "validate_captcha",
+  //     })
+  //     .then((token) => {
+  //       alert("Captcha Validated");
+  //     });
+  // });
 };
 
 let date = new Date();

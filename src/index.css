@@ -34,7 +34,7 @@
     text-decoration: none;
     font-size: 30px;
     letter-spacing: 2px;
-    padding: 5px 0 0 5px;
+    padding: 5px 0 0 15px;
     -webkit-transition: 0.6s;
     transition: 0.6s;
     font-family: "Charm", cursive;
@@ -80,10 +80,10 @@
   }
   #home #aboutMe h3 {
     padding: 15px 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   #home #aboutMe p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   #home #aboutMe a {
     font-size: 1rem;
@@ -92,7 +92,7 @@
     border: #fff solid 2px;
     background-color: #000;
     text-decoration: none;
-    margin-top: 35px;
+    margin-top: 25px;
     display: inline-block;
   }
   header.sticky {
@@ -105,7 +105,7 @@
     font-size: 30px;
     -webkit-transition: 0.6s;
     transition: 0.6s;
-    margin: 0 0 0 90px;
+    margin: 0 0 0 110px;
   }
   header.sticky ul {
     position: relative;
@@ -250,7 +250,6 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    margin: 10px 0;
   }
   #contact #contact-form {
     width: 90%;
@@ -262,7 +261,7 @@
   #contact #contact-form h2 {
     text-align: center;
     color: #eeeeee;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   #contact #contact-form section {
     display: -webkit-box;
@@ -298,7 +297,7 @@
     width: 30%;
   }
   #contact .fab {
-    font-size: 40px;
+    font-size: 25px;
     background-color: rgba(0, 0, 0, 0);
     color: #eeeeee;
     margin: 5px 0;
@@ -409,8 +408,8 @@
     margin: 0 30px;
   }
   #contact #media a {
-    margin: 30px 0;
-    font-size: 50px;
+    margin: 20px 0;
+    font-size: 40px;
   }
 }
 
