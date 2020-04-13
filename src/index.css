@@ -267,7 +267,7 @@
   #contact #contact-form section input {
     border: 2px solid black;
     border-radius: 10px;
-    width: 100%;
+    width: 90%;
     font-size: 1rem;
     background-color: #eeeeee;
   }
@@ -305,16 +305,16 @@
 
 @media only screen and (min-width: 375px) {
   #home #aboutMe {
-    padding: 380px 15px 0 15px;
+    padding: 200px 15px 0 15px;
   }
   #home #aboutMe a {
     padding: 5px 8px;
   }
   #portfolio .bigBox .cardContainer .card {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   header .logo {
-    padding: 5px 0 0 23px;
+    padding: 5px 0 0 26px;
   }
   header.sticky {
     padding: 5px 0;
@@ -363,16 +363,16 @@
             justify-content: space-between;
   }
   #home #aboutMe {
-    padding: 360px 15px 0 15px;
+    padding: 200px 15px 0 15px;
   }
   #home #aboutMe h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   #home #aboutMe p {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   #portfolio .bigBox .cardContainer .card {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   header.sticky .logo {
     color: #000;
@@ -396,8 +396,8 @@
     margin: 0 30px;
   }
   #contact #media a {
-    margin: 20px 0;
-    font-size: 40px;
+    margin: 10px 0;
+    font-size: 30px;
   }
 }
 
@@ -474,18 +474,23 @@
     margin: 10px;
     padding: 5px 15px;
   }
-  #contact #contact-form {
-    width: 60%;
+  #contact #contact-form h2 {
+    font-size: 2rem;
   }
   #contact #contact-form section input {
+    font-size: 1.5rem;
     margin-bottom: 10px;
+  }
+  #contact #contact-form section label {
+    font-size: 1.5rem;
   }
   #contact #contact-form section textarea {
     margin-bottom: 10px;
-    width: 100%;
+    width: 90%;
+    font-size: 1.5rem;
   }
   #contact #contact-form section #button {
-    width: 40%;
+    width: 30%;
   }
   #contact #media a {
     margin: 10px 0;
@@ -589,12 +594,13 @@
     margin-bottom: 3px;
   }
   #contact #contact-form section textarea {
-    width: 100%;
+    width: 90%;
   }
   #contact #contact-form section #button {
     width: 30%;
   }
   #contact #media {
+    margin-top: 10px;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
