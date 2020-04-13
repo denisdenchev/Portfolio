@@ -164,6 +164,7 @@
   }
   #portfolio .bigBox .cardContainer .card h3,
   #portfolio .bigBox .cardContainer .card p {
+    padding: 5px 10px;
     color: #fff;
   }
   #portfolio .bigBox .cardContainer .card a {
@@ -176,8 +177,8 @@
   }
   #portfolio .bigBox .cardContainer .card a:hover {
     border: 2px solid #fff;
-    -webkit-transition: 1;
-    transition: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
     padding: 0 5px;
   }
   #portfolio .bigBox #alien-invaders {
@@ -238,6 +239,14 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    margin: 10px 0;
+  }
+  #contact #media .fab {
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #eeeeee;
+    margin-top: 20px;
+    text-decoration: none;
   }
   #contact #contact-form {
     width: 90%;
@@ -284,13 +293,6 @@
     margin-top: 10px;
     width: 30%;
   }
-  #contact .fab {
-    font-size: 25px;
-    background-color: rgba(0, 0, 0, 0);
-    color: #eeeeee;
-    margin-top: 10px;
-    text-decoration: none;
-  }
   footer {
     background-color: #000;
     height: 40px;
@@ -300,6 +302,36 @@
     text-align: center;
     letter-spacing: 0.5px;
     color: #eeeeee;
+  }
+}
+
+@media only screen and (min-width: 330px) {
+  header .logo {
+    padding: 5px 0 0 15px;
+  }
+}
+
+@media only screen and (min-width: 340px) {
+  header .logo {
+    padding: 5px 0 0 18px;
+  }
+}
+
+@media only screen and (min-width: 350px) {
+  header .logo {
+    padding: 5px 0 0 20px;
+  }
+  header.sticky .logo {
+    margin: 0 0 0 110px;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  header .logo {
+    padding: 5px 0 0 25px;
+  }
+  header.sticky .logo {
+    margin: 0 0 0 118px;
   }
 }
 
@@ -344,12 +376,30 @@
   }
 }
 
+@media only screen and (min-width: 390px) {
+  header .logo {
+    padding: 5px 0 0 32px;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  header .logo {
+    padding: 5px 0 0 35px;
+  }
+}
+
 @media only screen and (min-width: 410px) {
   header .logo {
-    padding: 5px 0 0 30px;
+    padding: 5px 0 0 35px;
   }
   header.sticky .logo {
     margin: 0 134px;
+  }
+}
+
+@media only screen and (min-width: 415px) {
+  header .logo {
+    padding: 5px 0 0 38px;
   }
 }
 
@@ -376,7 +426,7 @@
   }
   header.sticky .logo {
     color: #000;
-    margin-left: 142px;
+    margin-left: 148px;
     font-size: 30px;
   }
   header.sticky ul {
@@ -468,7 +518,7 @@
     width: 45%;
   }
   #portfolio .bigBox .cardContainer .card {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   #portfolio .bigBox .cardContainer .card .links a {
     margin: 10px;
@@ -537,7 +587,7 @@
     margin-left: 20px;
   }
   header li a {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
   }
   header.sticky {
@@ -565,7 +615,7 @@
   }
   header.sticky li a {
     margin: 0 40px;
-    font-size: 25px;
+    font-size: 22px;
   }
   #home #aboutMe {
     padding: 430px 15px 0 15px;
