@@ -227,7 +227,6 @@
   }
 
   #contact {
-    height: 95vh;
     width: 100%;
     background: url(./images/contact.jpg);
     background-size: cover;
@@ -239,13 +238,12 @@
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
-      margin: 10px 0;
 
       .fab {
-        font-size: 35px;
+        font-size: 30px;
         background-color: rgba(0, 0, 0, 0);
         color: #eeeeee;
-        margin-top: 20px;
+        margin: 10px;
         text-decoration: none;
       }
     }
@@ -267,6 +265,15 @@
         display: flex;
         flex-direction: column;
 
+        #customerInfo {
+          background-color: #eeeeee;
+          width: 90%;
+          border: 2px solid #eeeeee;
+          border-radius: 10px;
+          margin: 15px 0;
+          padding: 5px;
+        }
+
         label {
           color: #eeeeee;
           font-size: 1rem;
@@ -276,7 +283,7 @@
           border: 2px solid black;
           border-radius: 10px;
           width: 90%;
-          font-size: 1rem;
+          font-size: 0.9rem;
           background-color: #eeeeee;
         }
 
@@ -293,6 +300,12 @@
           background-color: #eeeeee;
           margin-top: 10px;
           width: 30%;
+        }
+
+        #uniqueCode {
+          margin-top: 15px;
+          font-size: 1rem;
+          text-align: center;
         }
       }
     }
@@ -578,24 +591,25 @@
   }
 
   #contact {
+    // height: 105vh;
     #contact-form {
       h2 {
         font-size: 2rem;
       }
       section {
         input {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           margin-bottom: 10px;
         }
 
         label {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
         }
 
         textarea {
           margin-bottom: 10px;
           width: 90%;
-          font-size: 1.5rem;
+          font-size: 1.2rem;
         }
 
         #button {
@@ -708,6 +722,7 @@
   }
 
   #contact {
+    height: 105vh;
     #contact-form {
       margin: 20px auto auto 40px;
       width: 40%;
@@ -731,7 +746,7 @@
     }
 
     #media {
-      margin-top: 10px;
+      margin: 0;
       justify-content: space-evenly;
       width: 46%;
       a {

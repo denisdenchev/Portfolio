@@ -219,7 +219,6 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./images/data.jpg);
   }
   #contact {
-    height: 95vh;
     width: 100%;
     background: url(./images/contact.jpg);
     background-size: cover;
@@ -239,13 +238,12 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    margin: 10px 0;
   }
   #contact #media .fab {
-    font-size: 35px;
+    font-size: 30px;
     background-color: rgba(0, 0, 0, 0);
     color: #eeeeee;
-    margin-top: 20px;
+    margin: 10px;
     text-decoration: none;
   }
   #contact #contact-form {
@@ -269,6 +267,14 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  #contact #contact-form section #customerInfo {
+    background-color: #eeeeee;
+    width: 90%;
+    border: 2px solid #eeeeee;
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 5px;
+  }
   #contact #contact-form section label {
     color: #eeeeee;
     font-size: 1rem;
@@ -277,7 +283,7 @@
     border: 2px solid black;
     border-radius: 10px;
     width: 90%;
-    font-size: 1rem;
+    font-size: 0.9rem;
     background-color: #eeeeee;
   }
   #contact #contact-form section textarea {
@@ -292,6 +298,11 @@
     background-color: #eeeeee;
     margin-top: 10px;
     width: 30%;
+  }
+  #contact #contact-form section #uniqueCode {
+    margin-top: 15px;
+    font-size: 1rem;
+    text-align: center;
   }
   footer {
     background-color: #000;
@@ -528,16 +539,16 @@
     font-size: 2rem;
   }
   #contact #contact-form section input {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
   }
   #contact #contact-form section label {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   #contact #contact-form section textarea {
     margin-bottom: 10px;
     width: 90%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   #contact #contact-form section #button {
     width: 30%;
@@ -633,6 +644,9 @@
   #portfolio .bigBox .cardContainer .card {
     font-size: 1.4rem;
   }
+  #contact {
+    height: 105vh;
+  }
   #contact #contact-form {
     margin: 20px auto auto 40px;
     width: 40%;
@@ -650,7 +664,7 @@
     width: 30%;
   }
   #contact #media {
-    margin-top: 10px;
+    margin: 0;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
