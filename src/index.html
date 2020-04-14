@@ -87,9 +87,9 @@
             <p>
               A practice task, to demonstrate CRUD methods and ability to work
               with database. This app has been created using React and
-              Bootstrap, currently adding and deleting stuff from database, the
-              app is still being worked on in terms of styling. Next steps would
-              be: add authentication and private rooting.
+              Bootstrap, currently adding and deleting information from the
+              database, the app is still being worked on in terms of styling.
+              Next steps would be: add authentication and private rooting.
             </p>
             <div class="links">
               <a href="https://todolist.denchdev.co.uk/" target="_blank">Web</a>
@@ -124,11 +124,11 @@
         <section>
           <input type="hidden" name="contact_number" />
           <label>Subject</label>
-          <input type="text" name="user_subject" />
+          <input type="text" name="user_subject" maxlength="55" />
           <label>Name</label>
-          <input type="text" name="user_name" />
+          <input type="text" name="user_name" maxlength="55" />
           <label>Email</label>
-          <input type="email" name="user_email" />
+          <input type="email" name="user_email" maxlength="55" />
           <label>Message</label>
           <textarea name="message" maxlength="250"></textarea>
           <div id="customerInfo">
@@ -138,13 +138,17 @@
             </p>
             <h4 id="displayHere">Your unique code is:</h4>
           </div>
-          <input type="button" value="Generate" onclick="displayCode()" />
-
+          <input
+            type="button"
+            value="Generate unique code"
+            onclick="displayCode()"
+          />
           <input
             type="text"
             placeholder="Insert your unique code here"
             id="uniqueCode"
             oninput="verifyCode()"
+            maxlength="10"
           />
           <input type="submit" value="Submit" id="button" />
         </section>

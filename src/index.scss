@@ -160,7 +160,7 @@
 
             &:hover {
               border: 2px solid #fff;
-              transition: 1s;
+              transition: 0.6s;
               padding: 0 5px;
             }
           }
@@ -284,6 +284,7 @@
           border-radius: 10px;
           width: 90%;
           font-size: 0.9rem;
+          padding: 0 5px;
           background-color: #eeeeee;
         }
 
@@ -293,6 +294,7 @@
           width: 90%;
           height: 80px;
           font-size: 1rem;
+          padding: 0 5px;
           background-color: #eeeeee;
         }
 

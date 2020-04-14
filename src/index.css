@@ -177,8 +177,8 @@
   }
   #portfolio .bigBox .cardContainer .card a:hover {
     border: 2px solid #fff;
-    -webkit-transition: 1s;
-    transition: 1s;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
     padding: 0 5px;
   }
   #portfolio .bigBox #alien-invaders {
@@ -284,6 +284,7 @@
     border-radius: 10px;
     width: 90%;
     font-size: 0.9rem;
+    padding: 0 5px;
     background-color: #eeeeee;
   }
   #contact #contact-form section textarea {
@@ -292,6 +293,7 @@
     width: 90%;
     height: 80px;
     font-size: 1rem;
+    padding: 0 5px;
     background-color: #eeeeee;
   }
   #contact #contact-form section #button {

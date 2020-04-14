@@ -55,4 +55,5 @@ const resetFormValues = () => {
   document.getElementById("contact-form").reset();
   document.getElementById("displayHere", "uniqueCode").innerHTML = "";
   document.getElementById("uniqueCode").style.backgroundColor = "#eeeeee";
+  window.location.reload(true);
 };
