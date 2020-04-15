@@ -148,7 +148,7 @@
     height: 100%;
     text-align: center;
     opacity: 0;
-    font-size: 1;
+    font-size: 0.9rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
