@@ -148,7 +148,7 @@
     height: 100%;
     text-align: center;
     opacity: 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -503,7 +503,7 @@
     font-weight: 600;
   }
   #home #aboutMe {
-    padding: 450px 15px 0 15px;
+    padding: 350px 15px 0 15px;
   }
   #home #aboutMe h3 {
     font-size: 1.5rem;
@@ -530,8 +530,8 @@
   #portfolio .bigBox .cardContainer {
     width: 45%;
   }
-  #portfolio .bigBox .cardContainer .card {
-    font-size: 1.1rem;
+  #portfolio .bigBox .cardContainer .card p {
+    font-size: 0.9rem;
   }
   #portfolio .bigBox .cardContainer .card .links a {
     margin: 10px;
@@ -643,8 +643,8 @@
     font-size: 18px;
     padding: 5px 8px;
   }
-  #portfolio .bigBox .cardContainer .card {
-    font-size: 1.4rem;
+  #portfolio .bigBox .cardContainer .card p {
+    font-size: 1.2rem;
   }
   #contact {
     height: 105vh;
