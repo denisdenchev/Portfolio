@@ -1,196 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>denchDev</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="shortcut icon" href="./images/favicon.ico.png" />
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>denchDev</title>
+		<link rel="stylesheet" href="index.css" />
+		<link rel="shortcut icon" href="./images/favicon.ico.png" />
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Noto+Sans&display=swap");
-    </style>
-  </head>
-  <body>
-    <header>
-      <a href="#home" class="logo">denchDev</a>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </header>
-    <section id="home">
-      <div id="aboutMe">
-        <h3>
-          Hello, my name is Denis Denchev and I am a junior software developer
-        </h3>
-        <p>
-          I am finishing my education in April and have the core skills of
-          web-development such as HTML5, CSS3, JavaScript and React.
-        </p>
-        <p>I am actively looking for job opportunities.</p>
-        <a href="./CV.pdf" target="_blank"> Check my CV out</a>
-      </div>
-    </section>
-    <section id="portfolio">
-      <div class="bigBox">
-        <div class="cardContainer" id="alien-invaders">
-          <div class="card">
-            <h3>Alien-invaders</h3>
-            <p>
-              After two weeks of JavaScript, we were asked to do a timed
-              challenge so we can apply the content we have had learned. It was
-              a really intensive and challenging task. We had to do the
-              challenge using OOP.
-            </p>
-            <div class="links">
-              <a href="https://spaceship-game.denchdev.co.uk/" target="_blank"
-                >Web</a
-              >
-              <a
-                href="https://github.com/denisdenchev/Spaceships-game"
-                target="_blank"
-                >Code</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="cardContainer" id="morse-code">
-          <div class="card">
-            <h3>Morsecode Translator</h3>
-            <p>
-              In our first week of JavaScript we were assigned a task to create a morse-code translator that translates letters to morse.
-               The extension was to make the app work from morse to letters, which was very tricky. After finishing the course 
-               I went back to re-do the project and added some features to it. It was very difficult to add features I have never used,
-                but with reading and determination I have managed to do it!
-            </p>
-            <div class="links">
-              <a
-                href="https://morsecode-translator.denchdev.co.uk/"
-                target="_blank"
-                >Web</a
-              >
-              <a
-                href="https://github.com/denisdenchev/Morsecode-translator"
-                target="_blank"
-                >Code</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bigBox">
-        <div class="cardContainer" id="data-generator">
-          <div class="card">
-            <h3>To Do List</h3>
-            <p>
-              A practice task, to demonstrate CRUD methods and ability to work
-              with database. This app has been created using React and
-              Bootstrap, currently adding and deleting information from the
-              database, the app is still being worked on in terms of styling.
-              Next steps would be: add authentication and private rooting.
-            </p>
-            <div class="links">
-              <a href="https://todolist.denchdev.co.uk/" target="_blank">Web</a>
-              <a
-                href="https://github.com/denisdenchev/task-generator"
-                target="_blank"
-                >Code</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="cardContainer" id="vojo">
-          <div class="card">
-            <h3>Client Project</h3>
-            <p>
-              Working on a client's project, build a complex website, using
-              React. It was a good learning experience because I learned how to
-              set up Aunthenticaion, Database, private rooting, rooting to
-              different components and fetch from API's. The whole client
-              project was done pair programming and the half of it was remotely.
-            </p>
-            <div class="links">
-              <a
-                href="https://vojo-bbe4f.firebaseapp.com/dashboard"
-                target="_blank"
-                >Web</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <form id="contact-form" action="?" method="POST">
-        <h2>Send me an email</h2>
-        <section>
-          <input type="hidden" name="contact_number" />
-          <label>Subject</label>
-          <input type="text" name="user_subject" maxlength="55" />
-          <label>Name</label>
-          <input type="text" name="user_name" maxlength="55" />
-          <label>Email</label>
-          <input type="email" name="user_email" maxlength="55" />
-          <label>Message</label>
-          <textarea name="message" maxlength="250"></textarea>
-          <div id="customerInfo">
-            <p>
-              In order to send an email, we have to verify that you are not a
-              bot!
-            </p>
-            <h4 id="displayHere">Your unique code is:</h4>
-          </div>
-          <input
-            type="button"
-            value="Generate unique code"
-            onclick="displayCode()"
-          />
-          <input
-            type="text"
-            placeholder="Insert your unique code here"
-            id="uniqueCode"
-            oninput="verifyCode()"
-            maxlength="10"
-          />
-          <input type="submit" value="Submit" id="button" />
-        </section>
-      </form>
-      <div id="media">
-        <a
-          href="https://github.com/denisdenchev"
-          class="fab fa-github"
-          target="_blank"
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/denis-denchev-0bb4aa1a1/"
-          class="fab fa-linkedin"
-          target="_blank"
-        ></a>
-      </div>
-    </section>
-    <footer>
-      <h4>&copy; Copyright <span id="year"></span>, Denis Denchev</h4>
-    </footer>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap");
+			@import url("https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Noto+Sans&display=swap");
+		</style>
+	</head>
+	<body>
+		<header>
+			<a href="#home" class="logo">denchDev</a>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</header>
+		<section id="home">
+			<div id="aboutMe">
+				<h3>
+					Hello, my name is Denis Denchev and I am a junior software developer
+				</h3>
+				<p>
+					I am finishing my education in April and have the core skills of
+					web-development such as HTML5, CSS3, JavaScript and React.
+				</p>
+				<p>I am actively looking for job opportunities.</p>
+				<a href="./CV.pdf" target="_blank"> Check my CV out</a>
+			</div>
+		</section>
+		<section id="portfolio">
+			<div class="bigBox">
+				<div class="cardContainer" id="weather-app">
+					<div class="card">
+						<h3>Weather-App</h3>
+						<p>
+							A potential employer asked me to produce something in Vue, as I
+							have never used it and his tech stack required it. I did find a
+							tutorial which I followed along and added some extras as well. I
+							find Vue very fun and interesting to learn. Currently working on a
+							project, using Vue.
+						</p>
+						<div class="links">
+							<a
+								href="https://weatherapp-4ad14.firebaseapp.com/"
+								target="_blank"
+								>Web</a
+							>
+							<a
+								href="https://github.com/denisdenchev/Spaceships-game"
+								target="_blank"
+								>Code</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="cardContainer" id="morse-code">
+					<div class="card">
+						<h3>Morsecode Translator</h3>
+						<p>
+							In our first week of JavaScript we were assigned a task to create
+							a morse-code translator that translates letters to morse. The
+							extension was to make the app work from morse to letters, which
+							was very tricky. After finishing the course I went back to re-do
+							the project and added some features to it. It was very difficult
+							to add features I have never used, but with reading and
+							determination I have managed to do it!
+						</p>
+						<div class="links">
+							<a
+								href="https://morsecode-translator.denchdev.co.uk/"
+								target="_blank"
+								>Web</a
+							>
+							<a
+								href="https://github.com/denisdenchev/Morsecode-translator"
+								target="_blank"
+								>Code</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bigBox">
+				<div class="cardContainer" id="data-generator">
+					<div class="card">
+						<h3>To Do List</h3>
+						<p>
+							A practice task, to demonstrate CRUD methods and ability to work
+							with database. This app has been created using React and
+							Bootstrap, currently adding and deleting information from the
+							database, the app is still being worked on in terms of styling.
+							Next steps would be: add authentication and private rooting.
+						</p>
+						<div class="links">
+							<a href="https://todolist.denchdev.co.uk/" target="_blank">Web</a>
+							<a
+								href="https://github.com/denisdenchev/task-generator"
+								target="_blank"
+								>Code</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="cardContainer" id="vojo">
+					<div class="card">
+						<h3>Client Project</h3>
+						<p>
+							Working on a client's project, build a complex website, using
+							React. It was a good learning experience because I learned how to
+							set up Aunthenticaion, Database, private rooting, rooting to
+							different components and fetch from API's. The whole client
+							project was done pair programming and the half of it was remotely.
+						</p>
+						<div class="links">
+							<a
+								href="https://vojo-bbe4f.firebaseapp.com/dashboard"
+								target="_blank"
+								>Web</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact">
+			<form id="contact-form" action="?" method="POST">
+				<h2>Send me an email</h2>
+				<section>
+					<input type="hidden" name="contact_number" />
+					<label>Subject</label>
+					<input type="text" name="user_subject" maxlength="55" />
+					<label>Name</label>
+					<input type="text" name="user_name" maxlength="55" />
+					<label>Email</label>
+					<input type="email" name="user_email" maxlength="55" />
+					<label>Message</label>
+					<textarea name="message" maxlength="250"></textarea>
+					<div id="customerInfo">
+						<p>
+							In order to send an email, we have to verify that you are not a
+							bot!
+						</p>
+						<h4 id="displayHere">Your unique code is:</h4>
+					</div>
+					<input
+						type="button"
+						value="Generate unique code"
+						onclick="displayCode()"
+					/>
+					<input
+						type="text"
+						placeholder="Insert your unique code here"
+						id="uniqueCode"
+						oninput="verifyCode()"
+						maxlength="10"
+					/>
+					<input type="submit" value="Submit" id="button" />
+				</section>
+			</form>
+			<div id="media">
+				<a
+					href="https://github.com/denisdenchev"
+					class="fab fa-github"
+					target="_blank"
+				></a>
+				<a
+					href="https://www.linkedin.com/in/denis-denchev-0bb4aa1a1/"
+					class="fab fa-linkedin"
+					target="_blank"
+				></a>
+			</div>
+		</section>
+		<footer>
+			<h4>&copy; Copyright <span id="year"></span>, Denis Denchev</h4>
+		</footer>
 
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
-    ></script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
+		></script>
 
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("user_P2n8nSANnxuaWusp4Mgc4");
-      })();
-    </script>
-    <script src="index.js" type="text/javascript"></script>
-    <script
-      src="https://kit.fontawesome.com/c6d689a9c6.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init("user_P2n8nSANnxuaWusp4Mgc4");
+			})();
+		</script>
+		<script src="index.js" type="text/javascript"></script>
+		<script
+			src="https://kit.fontawesome.com/c6d689a9c6.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
